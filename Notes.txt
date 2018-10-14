@@ -1,0 +1,8 @@
+The employee.sql file is an exported test database I was using to aid in testing the application.
+
+Assumptions:
+I assumed the forecast data for 3 hour periods was not necessary for this implementation and so the five day forecast information that is presented is the forecast taken at noon on that specific day.
+
+I assumed the city associated with a worker is a valid city in Jamaica and can therefore be used as a parameter for the OpenWeatherMap Api
+
+I assumed the "IT people" would all have the role of "IT" in the database

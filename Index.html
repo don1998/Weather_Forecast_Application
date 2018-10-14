@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="forecast.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+<meta charset="utf-8"/>
+
+</head>
+
+<div class="jumbotron">
+    <center><h1>Weather Forecast</h1></center>
+</div>
+
+	<center>
+		<p>Please enter the city for which you want a 5 day weather forecast.</p>
+
+		<p>(If no city is selected the forecast for Kingston will be given by default)</p>
+		<input type="text" id="city" class="form-control-lg"/><br><br>
+		<button type="button" class="btn-dark" style="border-radius:8px;" onclick="myFunction();">Get-Forecast</button>
+	</center><br><br>
+
+<center>
+<div class="card-deck ">
+
+            <div class="col-sm-2 ">
+                    <div class="card " style="width: 90%;" align="center">
+                        <div class="dayNames card-header bg-secondary" id="day0">
+                        </div>
+                        <img class="card-img-top" id="img0"/>
+                        <div class="card-body bg-primary">
+                            <b class="bold"></b><span id="info0"></span><br><br>
+                            <span id="descr0">  </span>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                        	<span id="date0">  </span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-2 ">
+                    <div class="card " style="width: 90%;" align="center">
+                        <div class="dayNames card-header bg-secondary" id="day1">
+
+                        </div>
+                        <img class="card-img-top" id="img1"/>
+                        <div class="card-body bg-primary">
+                            <b class="bold"></b><span id="info1"></span><br><br>
+                            <span id="descr1">  </span>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                        	<span id="date1">  </span>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="col-sm-2 ">
+                    <div class="card " style="width: 90%;" align="center">
+                        <div class="dayNames card-header bg-secondary" id="day2">
+
+                        </div>
+                        <img class="card-img-top" id="img2" />
+                        <div class="card-body bg-primary">
+                            <b class="bold"></b><span id="info2"></span><br><br>
+                            <span id="descr2">  </span>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                        	<span id="date2">  </span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-2 ">
+                    <div class="card " style="width: 90%;" align="center">
+                        <div class="dayNames card-header bg-secondary" id="day3">
+
+                        </div>
+                        <img class="card-img-top" id="img3" />
+                        <div class="card-body bg-primary">
+                            <b class="bold"></b><span id="info3"></span><br><br>
+                            <span id="descr3">  </span>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                        	<span id="date3">  </span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-2 ">
+                    <div class="card " style="width: 90%;" align="center">
+                        <div class="dayNames card-header bg-secondary" id="day4">
+
+                        </div>
+                        <img class="card-img-top" id="img4"/>
+                        <div class="card-body bg-primary">
+                            <b class="bold"></b><span id="info4"></span><br><br>
+                            <span id="descr4">  </span>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                        	<span id="date4">  </span>
+                        </div>
+                    </div>
+            </div>
+
+</div >
+</center>
+
+</html>
