@@ -1,6 +1,6 @@
 
 function myFunction(){
-	var city = $("#city").val(); //Value of city entered in input field	
+	var city = $("#city").val(); //Value of city entered in input field
 	$.ajax({
 		  type: "POST",
 		  url: "apicall.php", //endpoint
@@ -22,8 +22,7 @@ function myFunction(){
 		  		window.alert("The workers have been notified about schedule changes!"); //Alerting user that the emails have been sent to workers
 		  },
 		  error: function(requestObject, error, errorThrown) {
-            alert(error);
-            alert(errorThrown);
+			alert("Something went wrong! Please try again with a valid city name.");
        } 
 	});
 
